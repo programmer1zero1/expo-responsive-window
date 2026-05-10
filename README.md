@@ -25,21 +25,22 @@ import { useScreenLayout, ScreenContentInsets } from '@programmer1zero1/expo-res
 ## Table of contents
 
 1. [Why this package](#why-this-package)
-2. [Mental model in 30 seconds](#mental-model-in-30-seconds)
-3. [Reactive vs snapshot — read this first](#reactive-vs-snapshot--read-this-first)
-4. [Quick reference: which helper for which style prop?](#quick-reference-which-helper-for-which-style-prop)
-5. [API by use case](#api-by-use-case)
+2. [Roadmap & philosophy](#roadmap--philosophy)
+3. [Mental model in 30 seconds](#mental-model-in-30-seconds)
+4. [Reactive vs snapshot — read this first](#reactive-vs-snapshot--read-this-first)
+5. [Quick reference: which helper for which style prop?](#quick-reference-which-helper-for-which-style-prop)
+6. [API by use case](#api-by-use-case)
    - [Read live layout in a screen](#read-live-layout-in-a-screen)
    - [Scale a single value](#scale-a-single-value)
    - [Pick a value per breakpoint](#pick-a-value-per-breakpoint)
    - [Wrap screen content](#wrap-screen-content)
    - [Configure defaults globally](#configure-defaults-globally)
    - [Outside React (worklets / handlers / module scope)](#outside-react-worklets--handlers--module-scope)
-6. [Gotchas](#gotchas)
-7. [Settings reference](#settings-reference)
-8. [Recipes](#recipes)
-9. [Monorepo & publish](#monorepo--publish)
-10. [Explore and learn more →](#explore-and-learn-more-)
+7. [Gotchas](#gotchas)
+8. [Settings reference](#settings-reference)
+9. [Recipes](#recipes)
+10. [Monorepo & publish](#monorepo--publish)
+11. [Explore and learn more →](#explore-and-learn-more-)
 
 ---
 
@@ -52,6 +53,16 @@ You design at one canvas (default **430 × 932**) and ship across phone, tablet,
 - **`StyleSheet.create({...})` at module scope freezes** any scaled value forever — rotation does nothing.
 
 This package gives you one hook (`useScreenLayout`) whose helpers fix all three.
+
+---
+
+## Roadmap & philosophy
+
+This is a **first version**: it should be useful today, and it will **evolve**. The goal is to keep improving the API, defaults, and docs as real apps stress-test it—without promising perfection on day one.
+
+**Why it exists:** a lot of older responsive helpers are **unmaintained**, **deprecated**, or **too narrow** for Expo + React Native across phone, tablet, foldable, web, and desktop. This library was written to cover that **versatility** in one place: live window dimensions, sensible scaling, breakpoints, and both **reactive** (components) and **snapshot** (handlers / worklets) paths.
+
+Nobody ships a flawless layout system—but we can aim for clarity, correctness, and maintainability. If something is missing or feels wrong, issues and PRs are welcome.
 
 ---
 
