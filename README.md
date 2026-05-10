@@ -4,6 +4,14 @@ Window-aware breakpoints, scaled design pixels, and gutters for **Expo / React N
 
 > Unofficial package — not from the Expo team.
 
+## Demo
+
+Recording from a real consuming app (**web** target): layout tracks **`useWindowDimensions`** via `useScreenLayout` — gutters, type scale, and rhythm stay coherent as the preview width changes. The GIF loops automatically on GitHub.
+
+<p align="center">
+  <img src="docs/demo.gif" alt="expo-responsive-window — responsive layout in a web preview" width="720" />
+</p>
+
 ---
 
 ## Install
@@ -24,22 +32,23 @@ import { useScreenLayout, ScreenContentInsets } from '@programmer1zero1/expo-res
 
 ## Table of contents
 
-1. [Why this package](#why-this-package)
-2. [Roadmap & philosophy](#roadmap--philosophy)
-3. [Mental model in 30 seconds](#mental-model-in-30-seconds)
-4. [Reactive vs snapshot — read this first](#reactive-vs-snapshot--read-this-first)
-5. [Quick reference: which helper for which style prop?](#quick-reference-which-helper-for-which-style-prop)
-6. [API by use case](#api-by-use-case)
+1. [Demo](#demo)
+2. [Why this package](#why-this-package)
+3. [Roadmap & philosophy](#roadmap--philosophy)
+4. [Mental model in 30 seconds](#mental-model-in-30-seconds)
+5. [Reactive vs snapshot — read this first](#reactive-vs-snapshot--read-this-first)
+6. [Quick reference: which helper for which style prop?](#quick-reference-which-helper-for-which-style-prop)
+7. [API by use case](#api-by-use-case)
    - [Read live layout in a screen](#read-live-layout-in-a-screen)
    - [Scale a single value](#scale-a-single-value)
    - [Pick a value per breakpoint](#pick-a-value-per-breakpoint)
    - [Wrap screen content](#wrap-screen-content)
    - [Configure defaults globally](#configure-defaults-globally)
    - [Outside React (worklets / handlers / module scope)](#outside-react-worklets--handlers--module-scope)
-7. [Gotchas](#gotchas)
-8. [Settings reference](#settings-reference)
-9. [Recipes](#recipes)
-10. [Explore and learn more →](#explore-and-learn-more-)
+8. [Gotchas](#gotchas)
+9. [Settings reference](#settings-reference)
+10. [Recipes](#recipes)
+11. [Explore and learn more →](#explore-and-learn-more-)
 
 ---
 
