@@ -39,8 +39,7 @@ import { useScreenLayout, ScreenContentInsets } from '@programmer1zero1/expo-res
 7. [Gotchas](#gotchas)
 8. [Settings reference](#settings-reference)
 9. [Recipes](#recipes)
-10. [Build & publish](#build--publish)
-11. [Explore and learn more →](#explore-and-learn-more-)
+10. [Explore and learn more →](#explore-and-learn-more-)
 
 ---
 
@@ -355,27 +354,6 @@ const columns = useResponsivePick({ phone: 1, tablet: 2, desktop: 3 });
   ))}
 </View>
 ```
-
----
-
-## Build & publish
-
-This repo is a **single package** at the root. Install and build here:
-
-```bash
-npm install
-npm run build    # compile src/ → dist/ (CJS + ESM + types) via tsup
-```
-
-`prepublishOnly` runs `npm run build` automatically before `npm publish`.
-
-To publish:
-
-```bash
-npm publish --access public      # MIT — set repository / author first
-```
-
-**Monorepo / workspace tip:** however you consume or link this package, keep **one** `react` in the dependency graph. A duplicated `react` leads to invalid hook calls.
 
 ---
 
