@@ -6,8 +6,6 @@ Window-aware breakpoints, scaled design pixels, and gutters for **Expo / React N
 
 ## Demo
 
-Recording from a real consuming app (**web** target): layout tracks **`useWindowDimensions`** via `useScreenLayout` — gutters, type scale, and rhythm stay coherent as the preview width changes. The GIF loops automatically on GitHub.
-
 <p align="center">
   <img src="docs/demo.gif" alt="expo-responsive-window — responsive layout in a web preview" width="720" />
 </p>
