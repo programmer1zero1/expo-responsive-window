@@ -1,6 +1,6 @@
 {
   "name": "@programmer1zero1/expo-responsive-window",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Window-aware breakpoints, scaled design pixels, and gutters for Expo / React Native. Live on rotation & resize. Includes README + AGENTS.md.",
   "license": "MIT",
   "author": "Muhammad Ramzan <programmer1zero1@gmail.com>",
